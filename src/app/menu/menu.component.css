@@ -1,0 +1,39 @@
+.fs-16
+{
+    font-size: 16pt;
+}
+
+a
+{
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Candara';
+    src: url('src/assets/fonts/Candara.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-arial-helvetica-sans-serif
+{
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.font-candara
+{
+    font-family: Candara;
+}
+
+.text-purple{
+    color: #7952B3;
+}
+
+.text-indigo{
+    color: #4b0082;
+}
+
+.text-blue-purple{
+    color: #2E1759;
+}
+
