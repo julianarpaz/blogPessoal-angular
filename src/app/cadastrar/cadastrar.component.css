@@ -1,0 +1,41 @@
+#img-bg{
+    background-image: url('https://i.imgur.com/jpl20xf.jpg');
+    min-height: 100vh; /*para completar 100% de todas as telas*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button-circle{
+    border-radius: 40px;
+    margin: 15px;
+    width: 150px;
+    height: 35px;
+}
+
+.button-circle-outline{
+    border-radius: 40px;
+    margin: 15px;
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    outline: #4b0082;    
+}
+
+.button-circle-outline:hover{
+    background-color: #4b0082;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Candara';
+    src: url('src/assets/fonts/Candara.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-candara
+{
+    font-family: Candara;
+}
+
