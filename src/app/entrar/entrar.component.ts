@@ -5,11 +5,11 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
 import { AuthService } from '../service/auth.service';
 
 @Component({
-  selector: 'app-logar',
-  templateUrl: './logar.component.html',
-  styleUrls: ['./logar.component.css']
+  selector: 'app-entrar',
+  templateUrl: './entrar.component.html',
+  styleUrls: ['./entrar.component.css']
 })
-export class LogarComponent implements OnInit {
+export class EntrarComponent implements OnInit {
 
   usuarioLogin: UsuarioLogin = new UsuarioLogin() 
 
@@ -22,7 +22,7 @@ export class LogarComponent implements OnInit {
   }
 
   entrar(){
-    this.auth.logar(this.usuarioLogin).subscribe({
+    this.auth.entrar(this.usuarioLogin).subscribe({
       next: (resp: UsuarioLogin)=>{
         this.usuarioLogin = resp
         environment.nome = this.usuarioLogin.nome
@@ -30,12 +30,6 @@ export class LogarComponent implements OnInit {
         environment.foto = this.usuarioLogin.foto
         environment.token = this.usuarioLogin.token
         environment.tipo = this.usuarioLogin.tipo
-
-        console.log(environment.nome)
-        console.log(environment.id)
-        console.log(environment.foto)
-        console.log(environment.token)
-        console.log(environment.tipo)
 
         this.router.navigate(['/inicio'])
       },
