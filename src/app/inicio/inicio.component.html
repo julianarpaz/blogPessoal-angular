@@ -1,1 +1,63 @@
-<p>inicio works!</p>
+<div class="container-fluid">
+    <div class="row bg-light">
+        <div class="container d-flex align-items-center">
+            <div class="col-md-6 text-center">
+                <h1>Bem-vindo ao blog de tarô</h1>
+                <h6>Conteúdo sobre os arcanos</h6>
+                <div class="row justify-content-around">
+                    <button class="btn btn-outline-info"data-toggle="modal" data-target="#novaPostagem">
+                        Nova postagem
+                    </button>                        
+                    <button class="btn btn-outline-info">
+                        Todas as postagens
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto">
+                <img src="../../assets/img/tarot-cards-moon-halloween-stroke-by-Vexels.png" alt="taro" class="img-fluid">
+            </div>
+        </div>        
+    </div>
+</div>
+
+<div class="row">
+    <div class="container">
+        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="todasPostagens" aria-selected="true">Todas as postagens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="minhasPostagens" aria-selected="false">Minhas postagens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Postagem por tema</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iste perspiciatis ab ratione, officiis sint commodi nulla pariatur! Non quia harum doloremque eaque quisquam totam in ratione dignissimos quis maxime?</div>
+            <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, officia, iste placeat in fugit ut iusto libero fuga aliquid repellat quo earum omnis optio esse consectetur voluptatibus? Nesciunt, consequuntur illum?</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatem cum temporibus autem nisi ipsum distinctio repellat et, fugit dignissimos commodi asperiores, iure eum esse non, aliquid voluptas sint porro?</div>
+          </div>
+    </div>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
