@@ -1,7 +1,7 @@
 .button-circle-outline{
     border-radius: 40px;
     margin: 15px;
-    width: 150px;
+    width: 200px;    
     height: 35px;
     background-color: white;
     outline: #4b0082;    
@@ -13,9 +13,10 @@
     width: 150px;
     height: 35px;
 }
-    
-.bg-blue-purple{
-    background-color: #2E1759;
+
+.text-format{
+    font-family: Candara;
+    color: indigo;
 }
 
 .bg-indigo{
